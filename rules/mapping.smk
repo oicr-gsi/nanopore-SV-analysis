@@ -62,7 +62,7 @@ rule winnowmap_index:
     input:
         "{sample}/mapped/{sample}.bam"
     output:
-        temp("{sample}/mapped/{sample}.bam.bai")
+        "{sample}/mapped/{sample}.bam.bai"
     params:
         memory_per_thread="4G",
         run_time="0:1:0:0"
